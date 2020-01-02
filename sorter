@@ -1,0 +1,22 @@
+const setEducation = (data: UserEducation, i:number): UserEducation => (
+  data ? 
+  
+  
+  {
+      title: data.title,
+      data: [
+        {
+          ...data.data[0],
+         data: _.orderBy(data.data[0].data, ['index'], ['asc']),
+          
+          
+        }, 
+
+       
+
+              
+      ]
+    }
+    
+  : null
+);
